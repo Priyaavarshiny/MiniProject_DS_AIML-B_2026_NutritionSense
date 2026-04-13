@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 def perform_analysis(path):
     df = pd.read_csv(path)
@@ -31,14 +32,21 @@ def perform_analysis(path):
 
     df['Obesity_Simple'] = df['Obesity_Label'].apply(simplify)
 
-    # Plot graph
+    # Plot
     plt.figure(figsize=(8,5))
     sns.countplot(x='Obesity_Simple', data=df)
+
     plt.title("Health Risk Distribution")
     plt.xlabel("Health Category")
     plt.ylabel("Count")
+
+    plt.tight_layout()
     plt.show()
 
 
 if __name__ == "__main__":
-    perform_analysis("../dataset/processed_data/cleaned_data.csv")
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+    path = os.path.join(BASE_DIR, "dataset", "processed_data", "cleaned_data.csv")
+
+    perform_analysis(path)
