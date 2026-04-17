@@ -103,3 +103,5 @@ notebooks/
 report/
 README.md
 requirements.txt
+
+This project analyzes dietary patterns and predicts health risks using machine learning techniques. The implementation follows a structured data science workflow including preprocessing, visualization, and model development.
