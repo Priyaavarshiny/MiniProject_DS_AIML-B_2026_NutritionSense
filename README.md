@@ -76,6 +76,7 @@ The target variable represents different health risk categories such as normal, 
 
 ## 8. Conclusion
 The project demonstrates that dietary patterns and lifestyle choices play a significant role in determining health risks. Machine learning models can effectively predict obesity levels and support data-driven health awareness.
+The project follows a structured data science workflow, including data preprocessing, exploratory data analysis, visualization, and model development. Each stage is implemented systematically to ensure data quality, accurate analysis, and reliable prediction of health risks. The results demonstrate the effectiveness of machine learning in identifying patterns related to obesity and lifestyle factors.
 
 ---
 
