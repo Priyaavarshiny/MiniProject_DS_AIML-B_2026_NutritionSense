@@ -1,3 +1,4 @@
+# Random Forest classifier used for predicting obesity levels
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
